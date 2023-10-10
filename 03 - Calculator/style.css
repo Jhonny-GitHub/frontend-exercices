@@ -1,0 +1,91 @@
+html, body {
+    background-color: #575D90;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.calculator {
+    max-width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 18px 4px rgba(0, 0, 0, 0.2);
+    .window-header {
+        display: flex;
+        gap: 5px;
+        padding: 10px;
+        .button {
+            width: 12px;
+            height: 12px;
+            background-color: red;
+            border-radius: 6px;
+        }
+        /*
+        *   El selector ":nth-child(<number>)", selecciona l'element que és fill número X (que s'especifiqui) del seu element pare
+        *   En aquest exemple:
+        *   <div class="window-header">
+        *       <div class="button"></div> --> :nth-child(1)
+        *       <div class="button"></div> --> :nth-child(2)
+        *       <div class="button"></div> --> :nth-child(3)
+        *   </div>
+        *
+        *   
+        */
+        .button:nth-child(1){
+            background-color: #FF605C;
+        }
+        .button:nth-child(2){
+            background-color: #FFBD44;
+        }
+        .button:nth-child(3){
+            background-color: #00CA4E;
+        }
+    }
+    .result-container{
+        padding: 0px 15px;
+        text-align: end;
+        .historic{
+            color: lightgrey;
+            margin: 0;
+        }
+        .result{
+            font-weight: normal;
+            font-size: 36px;
+            margin: 10px 0;
+        }
+    }
+    .operations-container{
+        background-color: #292d36;
+        border-radius: 10px;
+        > table {
+            border-spacing: 4px;
+            > tbody > tr > td {
+                font-weight: bold;
+                text-align: center;
+                color: white;
+                width: 50px;
+                height: 50px;
+                border-radius: 6px;
+                transition: .25s all ease;
+                background-color: #2c2f39;
+            }
+            > tbody > tr > td:hover{
+                background-color: #3f4451;
+            }
+            .function {
+                font-weight: normal;
+                color: #5fa97b;
+            }
+            .operator {
+                color: #FF605C;
+            }
+            .empty {
+                background: none;
+                pointer-events: none;
+            }
+        }
+    }
+}
+

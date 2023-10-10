@@ -45,11 +45,15 @@ html, body {
     margin: 0 auto;
     display: grid;
     /*
-    
+        "grid-template-columns"
+        Aquesta linia jo he intentat entendre-la mil vegades, 
+        però sempre la he de tornar a buscar a internet.
+        No digas nada, solo dalde a laik
     */
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 25px;
     .thumbnail {
+        text-align: center;
         > img {
             object-fit: cover;
             width: 100%;

@@ -4,6 +4,7 @@ HTML, css and Javascript exercices in different difficulty levels.
 Beginner:
 - 01 - Custom card (html, css)
 - 02 - Personal portfolio (html, css)
+- 03 - Calculator (html, css)
 
 
 <h3 align="left">Languages and Tools:</h3>
